@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.msb.hjy_backend.system.mapper.SysDeptMapper">
+
+
+
+    <!--查询单个-->
+    <select id="selectDeptList" resultType="SysDept">
+        select dept_id,parent_id,ancestors,dept_name,order_num,leader,phone,email,status,del_flag,create_by,create_time,update_by,update_time
+        from sys_dept
+        where del_flag = 0 order by parent_id, order_num;
+    </select>
+
+
+</mapper>
+
