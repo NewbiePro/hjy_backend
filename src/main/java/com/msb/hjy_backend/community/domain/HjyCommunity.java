@@ -7,13 +7,11 @@ import com.msb.hjy_backend.common.core.domain.BaseEntity;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.io.Serial;
 
-@NoArgsConstructor
-@Data
+
+
 public class HjyCommunity extends BaseEntity {
 
-    @Serial
     private static final long serialVersionUID = -1708144701179687090L;
 
     @TableId
@@ -50,4 +48,109 @@ public class HjyCommunity extends BaseEntity {
 
     @JsonFormat(shape = JsonFormat.Shape.STRING)
     private Long communitySort;
+
+    public Long getCommunityId() {
+        return communityId;
+    }
+
+    public void setCommunityId(Long communityId) {
+        this.communityId = communityId;
+    }
+
+    public String getCommunityName() {
+        return communityName;
+    }
+
+    public void setCommunityName(String communityName) {
+        this.communityName = communityName;
+    }
+
+    public String getCommunityCode() {
+        return communityCode;
+    }
+
+    public void setCommunityCode(String communityCode) {
+        this.communityCode = communityCode;
+    }
+
+    public String getCommunityProvinceCode() {
+        return communityProvinceCode;
+    }
+
+    public void setCommunityProvinceCode(String communityProvinceCode) {
+        this.communityProvinceCode = communityProvinceCode;
+    }
+
+    public String getCommunityCityCode() {
+        return communityCityCode;
+    }
+
+    public void setCommunityCityCode(String communityCityCode) {
+        this.communityCityCode = communityCityCode;
+    }
+
+    public String getCommunityTownCode() {
+        return communityTownCode;
+    }
+
+    public void setCommunityTownCode(String communityTownCode) {
+        this.communityTownCode = communityTownCode;
+    }
+
+    public String getCommunityDetailedAddress() {
+        return communityDetailedAddress;
+    }
+
+    public void setCommunityDetailedAddress(String communityDetailedAddress) {
+        this.communityDetailedAddress = communityDetailedAddress;
+    }
+
+    public String getCommunityLongitude() {
+        return communityLongitude;
+    }
+
+    public void setCommunityLongitude(String communityLongitude) {
+        this.communityLongitude = communityLongitude;
+    }
+
+    public String getCommunityLatitude() {
+        return communityLatitude;
+    }
+
+    public void setCommunityLatitude(String communityLatitude) {
+        this.communityLatitude = communityLatitude;
+    }
+
+    public Long getDeptId() {
+        return deptId;
+    }
+
+    public void setDeptId(Long deptId) {
+        this.deptId = deptId;
+    }
+
+    public Long getCommunitySort() {
+        return communitySort;
+    }
+
+    public void setCommunitySort(Long communitySort) {
+        this.communitySort = communitySort;
+    }
+
+    @Override
+    public String toString() {
+        return "HjyCommunity{" +
+                "communityId=" + communityId +
+                ", communityName='" + communityName + '\'' +
+                ", communityCode='" + communityCode + '\'' +
+                ", communityProvinceCode='" + communityProvinceCode + '\'' +
+                ", communityCityCode='" + communityCityCode + '\'' +
+                ", communityTownCode='" + communityTownCode + '\'' +
+                ", communityDetailedAddress='" + communityDetailedAddress + '\'' +
+                ", communityLongitude='" + communityLongitude + '\'' +
+                ", communityLatitude='" + communityLatitude + '\'' +
+                ", deptId=" + deptId +
+                ", communitySort=" + communitySort +
+                '}';
+    }
 }

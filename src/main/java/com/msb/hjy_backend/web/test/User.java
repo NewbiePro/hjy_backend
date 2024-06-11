@@ -1,8 +1,10 @@
 package com.msb.hjy_backend.web.test;
 
-import jakarta.validation.constraints.NotNull;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
+
+import javax.validation.constraints.NotNull;
 
 @Data
 @AllArgsConstructor

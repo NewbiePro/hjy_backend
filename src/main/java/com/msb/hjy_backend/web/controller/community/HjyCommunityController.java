@@ -10,16 +10,19 @@ import com.msb.hjy_backend.common.core.page.PageResult;
 import com.msb.hjy_backend.common.utils.ServletUtils;
 import com.msb.hjy_backend.community.domain.HjyCommunity;
 import com.msb.hjy_backend.community.domain.dto.HjyCommunityDto;
+import com.msb.hjy_backend.community.domain.vo.HjyCommunityVo;
 import com.msb.hjy_backend.community.service.HjyCommunityService;
 import com.msb.hjy_backend.community.service.impl.HjyCommunityServiceImpl;
-import jakarta.annotation.Resource;
+import javax.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
 @RequestMapping("/community")
+@Slf4j
 public class HjyCommunityController extends BaseController {
     @Resource
     private HjyCommunityService hjyCommunityService;
@@ -30,6 +33,7 @@ public class HjyCommunityController extends BaseController {
      * @return
      */
     @GetMapping("/list")
+    @PreAuthorize("@pe.hasPerms('system:community:list')")
     public PageResult list(HjyCommunity hjyCommunity){
         //封装调用pageHelper的startpage方法
         startPage();
@@ -68,6 +72,27 @@ public class HjyCommunityController extends BaseController {
     public BaseResponse delete(@PathVariable Long[] communityIds){
         return toAjax(hjyCommunityService.deleteHjyCommunity(communityIds));
 
+    }
+
+    // 小区下拉列表
+    @GetMapping("/queryPullDown")
+    public BaseResponse queryPullDown(HjyCommunity hjyCommunity){
+
+        //打印入参日志
+        log.info("log() called with parameters => [hjyCommunity = {}]",hjyCommunity);
+        System.out.println(hjyCommunity);
+
+        List<HjyCommunityVo> voList = null;
+        try {
+            voList = hjyCommunityService.queryPullDown(hjyCommunity);
+        } catch (Exception e) {
+            //e.printStackTrace();
+            log.warn("获取小区下拉列表失败!",e);
+        }
+
+        //打印日志 返回结果
+        log.info("log() returned: {} ",voList);
+        return BaseResponse.success(voList);
     }
 
 

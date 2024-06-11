@@ -5,14 +5,14 @@ import com.baomidou.mybatisplus.annotation.TableField;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
 
-import java.io.Serial;
+
 import java.io.Serializable;
 import java.util.Date;
 import java.util.Map;
 
 @Data
 public class BaseEntity implements Serializable {
-    @Serial
+
     private static final long serialVersionUID = -4452856995464107402L;
     // 搜索值
     @TableField(exist = false) //不属于数据库字段.mybatis在新增的时候会忽略
@@ -42,5 +42,9 @@ public class BaseEntity implements Serializable {
 
     //备注
     private String remark;
+
+    private String beginTime;
+
+    private String endTime;
 
 }

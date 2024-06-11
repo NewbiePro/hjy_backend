@@ -1,17 +1,22 @@
 package com.msb.hjy_backend.community.service.impl;
 
+import com.msb.hjy_backend.common.utils.OrikaUtils;
 import com.msb.hjy_backend.community.domain.HjyCommunity;
 import com.msb.hjy_backend.community.domain.dto.HjyCommunityDto;
+import com.msb.hjy_backend.community.domain.vo.HjyCommunityVo;
 import com.msb.hjy_backend.community.mapper.HjyCommunityMapper;
 import com.msb.hjy_backend.community.service.HjyCommunityService;
-import jakarta.annotation.Resource;
+
 import org.springframework.stereotype.Service;
 
+import javax.annotation.Resource;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class HjyCommunityServiceImpl implements HjyCommunityService {
+
     @Resource
     private HjyCommunityMapper hjyCommunityMapper;
 
@@ -42,5 +47,19 @@ public class HjyCommunityServiceImpl implements HjyCommunityService {
     @Override
     public int deleteHjyCommunity(Long[] hjyCommunityIds) {
         return hjyCommunityMapper.deleteBatchIds(Arrays.asList(hjyCommunityIds));
+    }
+
+    @Override
+    public List<HjyCommunityVo> queryPullDown(HjyCommunity hjyCommunity) {
+        List<HjyCommunityDto> dtolist = hjyCommunityMapper.queryList(hjyCommunity);
+
+        //对象拷贝
+        List<HjyCommunityVo> hjyCommunityVos = dtolist.stream().map(
+                dto -> {
+                    HjyCommunityVo communityVo = OrikaUtils.convert(dto, HjyCommunityVo.class);
+                    return communityVo;
+                }).collect(Collectors.toList());
+
+        return hjyCommunityVos;
     }
 }

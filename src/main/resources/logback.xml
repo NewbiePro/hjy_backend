@@ -32,7 +32,7 @@
         </encoder>
         <filter class="ch.qos.logback.classic.filter.LevelFilter">
             <!-- 过滤的级别 -->
-            <level>INFO</level>
+            <level>DEBUG</level>
             <!-- 匹配时的操作：接收（记录） -->
             <onMatch>ACCEPT</onMatch>
             <!-- 不匹配时的操作：拒绝（不记录） -->
@@ -80,6 +80,10 @@
     <logger name="com.msb" level="info" />
     <!-- Spring日志级别控制  -->
     <logger name="org.springframework" level="warn" />
+    <!--系统用户操作日志-->
+    <logger name="sys-user" level="info">
+        <appender-ref ref="sys-user"/>
+    </logger>
 
     <root level="info">
         <appender-ref ref="console" />
@@ -91,8 +95,5 @@
         <appender-ref ref="file_error" />
     </root>
 
-    <!--系统用户操作日志-->
-    <logger name="sys-user" level="info">
-        <appender-ref ref="sys-user"/>
-    </logger>
+
 </configuration>

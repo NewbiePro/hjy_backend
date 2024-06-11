@@ -13,4 +13,10 @@ public class GlobalExceptionHandler {
     public BaseResponse baseExceptionHandler(BaseException baseException){
         return BaseResponse.fail(baseException.getDefaultMessage());
     }
+
+    @ExceptionHandler(CustomException.class)
+    @ResponseBody
+    public BaseResponse businessException(CustomException customException){
+        return BaseResponse.fail(customException.getCode()+"", customException.getMsg(), customException.isSuccess());
+    }
 }

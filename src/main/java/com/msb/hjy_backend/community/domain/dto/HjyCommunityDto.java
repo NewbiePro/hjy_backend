@@ -5,14 +5,13 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import com.msb.hjy_backend.common.core.domain.BaseEntity;
 import lombok.Data;
 
-import java.io.Serial;
+
 
 //展示页面
 @Data
 public class HjyCommunityDto extends BaseEntity {
 
 
-    @Serial
     private static final long serialVersionUID = -1708144701179687090L;
 
     @JsonFormat(shape = JsonFormat.Shape.STRING)

@@ -2,7 +2,7 @@ package com.msb.hjy_backend.web.test;
 
 import com.msb.hjy_backend.common.core.domain.BaseResponse;
 import com.msb.hjy_backend.common.core.exception.BaseException;
-import org.jetbrains.annotations.NotNull;
+
 import org.springframework.validation.BindingResult;
 import org.springframework.validation.Errors;
 import org.springframework.validation.FieldError;

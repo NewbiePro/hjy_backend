@@ -1,6 +1,9 @@
 package com.msb.hjy_backend.system.domain;
 
+import com.baomidou.mybatisplus.annotation.FieldFill;
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
+import com.msb.hjy_backend.common.core.domain.BaseEntity;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -15,7 +18,7 @@ import java.util.List;
  */
 
 @Data
-public class SysDept implements Serializable {
+public class SysDept extends BaseEntity implements Serializable  {
     private static final long serialVersionUID = -62769440660988481L;
 /**
      * 部门id

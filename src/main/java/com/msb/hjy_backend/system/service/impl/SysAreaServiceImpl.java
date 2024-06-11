@@ -4,7 +4,7 @@ import com.msb.hjy_backend.system.domain.SysArea;
 import com.msb.hjy_backend.system.domain.dto.SysAreaDto;
 import com.msb.hjy_backend.system.mapper.SysAreaMapper;
 import com.msb.hjy_backend.system.service.SysAreaService;
-import jakarta.annotation.Resource;
+import javax.annotation.Resource;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -30,7 +30,7 @@ public class SysAreaServiceImpl implements SysAreaService {
                     sysAreaDto.setName(area.getName());
                     sysAreaDto.setChildrenSysArea(getChildrenArea(sysAreaDto, lists));
                     return sysAreaDto;
-                }).toList();
+                }).collect(Collectors.toList());
 
     }
 
@@ -42,7 +42,7 @@ public class SysAreaServiceImpl implements SysAreaService {
      */
     private List<SysAreaDto> getChildrenArea(SysAreaDto parentSysAreaDto, List<SysArea> lists) {
         List<SysArea> subAreaList = lists.stream().filter(sysArea -> sysArea.getParentCode().equals(parentSysAreaDto.getCode())) //获取当前父区域的子节点
-                .toList();  //将当前流转化成list
+                .collect(Collectors.toList());  //将当前流转化成list
 
         // 转换成dto对象
         if(subAreaList!=null && subAreaList.size()!=0){
@@ -53,7 +53,7 @@ public class SysAreaServiceImpl implements SysAreaService {
                 // 设置 子节点， 直到获取叶子节点
                 subSysAreaDto.setChildrenSysArea(getChildrenArea(subSysAreaDto, lists));
                 return subSysAreaDto;
-            }).toList();
+            }).collect(Collectors.toList());
         }
         return null;
     }
