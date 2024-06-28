@@ -15,8 +15,8 @@ import org.springframework.security.core.Authentication;
 import org.springframework.stereotype.Component;
 
 /**
- * @author spikeCong
- * @date 2023/5/5
+ * 
+ * 
  **/
 @Component
 public class SysLoginServiceImpl implements SysLoginService {

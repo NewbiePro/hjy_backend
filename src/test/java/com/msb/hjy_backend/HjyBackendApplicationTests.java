@@ -29,7 +29,7 @@ class HjyBackendApplicationTests {
         JwtBuilder jwtBuilder = Jwts.builder().setId("9527")
                 .setSubject("HJY_COMMUNITY")
                 .setIssuedAt(new Date())
-                .signWith(SignatureAlgorithm.HS256, "mashibing");
+                .signWith(SignatureAlgorithm.HS256, "aaronhuang");
 
         //压缩成string形式
         String jws = jwtBuilder.compact();

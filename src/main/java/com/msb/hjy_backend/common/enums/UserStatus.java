@@ -1,9 +1,7 @@
 package com.msb.hjy_backend.common.enums;
 
 /**
- * 用户状态
- * @author spikeCong
- * @date 2023/5/5
+ * User Status
  **/
 public enum UserStatus {
 

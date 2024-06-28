@@ -10,10 +10,7 @@ import org.springframework.data.redis.connection.RedisConnectionFactory;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
 
-/**
- * @author spikeCong
- * @date 2023/4/10
- **/
+// Redis Configuration
 @Configuration
 public class RedisConfig {
 

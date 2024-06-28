@@ -4,8 +4,6 @@ import java.util.UUID;
 
 /**
  * UUID生成器工具类
- * @author spikeCong
- * @date 2023/5/3
  **/
 public class UUIDUtils {
     /**

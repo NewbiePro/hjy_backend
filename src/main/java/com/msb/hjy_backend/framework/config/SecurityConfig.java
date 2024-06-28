@@ -18,8 +18,6 @@ import org.springframework.web.filter.CorsFilter;
 
 /**
  * Security配置
- * @author spikeCong
- * @date 2023/5/3
  **/
 @EnableGlobalMethodSecurity(prePostEnabled = true, securedEnabled = true)
 public class SecurityConfig extends WebSecurityConfigurerAdapter {

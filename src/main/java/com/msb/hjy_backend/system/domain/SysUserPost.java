@@ -2,8 +2,6 @@ package com.msb.hjy_backend.system.domain;
 
 /**
  * 用户和岗位中间表
- * @author spikeCong
- * @date 2023/5/25
  **/
 public class SysUserPost {
 

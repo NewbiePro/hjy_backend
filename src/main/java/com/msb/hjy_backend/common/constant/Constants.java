@@ -1,10 +1,6 @@
 package com.msb.hjy_backend.common.constant;
 
-/**
- * 通用常量类
- * @author spikeCong
- * @date 2023/5/3
- **/
+
 public class Constants {
 
     /**

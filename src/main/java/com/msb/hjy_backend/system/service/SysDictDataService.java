@@ -5,8 +5,8 @@ import com.msb.hjy_backend.system.domain.SysDictData;
 import java.util.List;
 
 /**
- * @author spikeCong
- * @date 2023/5/22
+ * 
+ * 
  **/
 public interface SysDictDataService {
 

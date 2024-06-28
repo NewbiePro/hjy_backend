@@ -1,10 +1,6 @@
 package com.msb.hjy_backend.common.constant;
 
-/**
- * 用户常量信息
- * @author spikeCong
- * @date 2023/5/11
- **/
+
 public class UserConstants {
 
     /**

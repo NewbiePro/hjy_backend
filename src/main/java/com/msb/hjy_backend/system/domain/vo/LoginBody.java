@@ -2,8 +2,8 @@ package com.msb.hjy_backend.system.domain.vo;
 
 /**
  * 用户登录表单对象
- * @author spikeCong
- * @date 2023/5/5
+ * 
+ * 
  **/
 public class LoginBody {
 

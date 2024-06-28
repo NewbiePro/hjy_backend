@@ -10,8 +10,6 @@ import java.util.Collections;
 
 /**
  * 通用的配置
- * @author spikeCong
- * @date 2023/5/8
  **/
 @Configuration
 public class ResourcesConfig {

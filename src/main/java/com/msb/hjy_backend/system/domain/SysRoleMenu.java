@@ -2,8 +2,6 @@ package com.msb.hjy_backend.system.domain;
 
 /**
  * 角色和菜单关联 sys_role_menu
- * @author spikeCong
- * @date 2023/5/26
  **/
 public class SysRoleMenu {
 

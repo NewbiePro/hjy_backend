@@ -7,8 +7,6 @@ import org.apache.ibatis.annotations.Param;
 import java.util.List;
 
 /**
- * @author spikeCong
- * @date 2023/5/22
  **/
 public interface SysDictDataMapper extends BaseMapper<SysDictData>
 {

@@ -14,8 +14,6 @@ import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * 对象复制工具类
- * @author spikeCong
- * @date 2023/4/1
  **/
 public class OrikaUtils {
 

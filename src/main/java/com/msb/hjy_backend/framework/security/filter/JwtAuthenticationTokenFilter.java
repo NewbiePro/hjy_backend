@@ -19,8 +19,6 @@ import java.util.Objects;
 
 /**
  * Token过滤器 验证token的有效性
- * @author spikeCong
- * @date 2023/5/8
  **/
 @Component
 public class JwtAuthenticationTokenFilter extends OncePerRequestFilter {

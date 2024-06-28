@@ -18,8 +18,7 @@ import java.util.Objects;
 
 /**
  * 自定义退出登录处理器
- * @author spikeCong
- * @date 2023/5/17
+
  **/
 @Configuration
 public class LogoutSuccessHandlerImpl implements LogoutSuccessHandler {

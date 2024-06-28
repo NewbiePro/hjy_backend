@@ -14,8 +14,8 @@ import java.util.List;
 
 /**
  * 数据字典信息
- * @author spikeCong
- * @date 2023/5/22
+ * 
+ * 
  **/
 @RestController
 @RequestMapping("/system/dict/data")

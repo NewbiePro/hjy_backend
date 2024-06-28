@@ -6,8 +6,6 @@ import com.msb.hjy_backend.system.domain.SysDictType;
 import java.util.List;
 
 /**
- * @author spikeCong
- * @date 2023/5/19
  **/
 public interface SysDictTypeMapper  extends BaseMapper<SysDictType> {
 

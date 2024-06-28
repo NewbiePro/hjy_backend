@@ -20,8 +20,8 @@ import java.util.List;
 
 /**
  * 菜单信息管理
- * @author spikeCong
- * @date 2023/5/26
+ * 
+ * 
  **/
 @RestController
 @RequestMapping("/system/menu")

@@ -11,8 +11,6 @@ import java.util.Set;
 
 /**
  * 用户权限处理
- * @author spikeCong
- * @date 2023/5/10
  **/
 @Component
 public class SysPermissionService {

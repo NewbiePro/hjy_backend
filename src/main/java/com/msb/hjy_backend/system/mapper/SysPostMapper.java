@@ -7,8 +7,6 @@ import java.util.List;
 
 /**
  * 岗位信息 数据层
- * @author spikeCong
- * @date 2023/5/24
  **/
 public interface SysPostMapper extends BaseMapper<SysPost>
 {

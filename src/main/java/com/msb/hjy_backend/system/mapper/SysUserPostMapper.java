@@ -3,10 +3,7 @@ import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.msb.hjy_backend.system.domain.SysUserPost;
 import java.util.List;
 
-/**
- * @author spikeCong
- * @date 2023/5/25
- **/
+
 public interface SysUserPostMapper extends BaseMapper<SysUserPost>
 {
     /**

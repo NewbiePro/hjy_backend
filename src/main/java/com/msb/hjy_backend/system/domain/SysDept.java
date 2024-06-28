@@ -13,8 +13,6 @@ import java.util.List;
 /**
  * 部门表(SysDept)实体类
  *
- * @author makejava
- * @since 2024-06-05 16:42:41
  */
 
 @Data

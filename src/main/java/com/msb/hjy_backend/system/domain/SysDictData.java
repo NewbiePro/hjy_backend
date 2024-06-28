@@ -12,8 +12,6 @@ import javax.validation.constraints.Size;
 
 /**
  * 字典数据表 对应实体
- * @author spikeCong
- * @date 2023/5/22
  **/
 public class SysDictData extends BaseEntity {
 

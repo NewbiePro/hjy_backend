@@ -9,8 +9,6 @@ import java.util.Set;
 
 /**
  * 登录用户 身份权限对象
- * @author spikeCong
- * @date 2023/5/5
  **/
 public class LoginUser implements UserDetails {
 

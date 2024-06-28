@@ -6,8 +6,7 @@ import javax.servlet.http.HttpServletResponse;
 
 /**
  * 业务异常基类
- * @author spikeCong
- * @date 2023/5/8
+ *
  **/
 public class CustomException extends RuntimeException {
 

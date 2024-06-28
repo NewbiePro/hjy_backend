@@ -6,8 +6,8 @@ import java.util.List;
 
 /**
  * 岗位信息 服务层
- * @author spikeCong
- * @date 2023/5/24
+ * 
+ * 
  **/
 public interface SysPostService
 {

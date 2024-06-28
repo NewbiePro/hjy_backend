@@ -14,8 +14,6 @@ import java.util.Set;
 
 /**
  * 自定义权限校验规则
- * @author spikeCong
- * @date 2023/5/12
  **/
 @Component("pe")
 public class PermsExpressionService {

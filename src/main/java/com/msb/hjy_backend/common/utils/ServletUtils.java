@@ -13,8 +13,6 @@ import java.io.IOException;
 
 /**
  * 客户端工具类
- * @author spikeCong
- * @date 2023/2/28
  **/
 public class ServletUtils {
 

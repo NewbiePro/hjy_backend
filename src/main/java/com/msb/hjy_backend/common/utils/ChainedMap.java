@@ -12,8 +12,6 @@ import java.util.Map;
 /**
  * 链式Map
  *  继承 LinkedCaseInsensitiveMap, 对key大小写不敏感的LinkedHashMap实现
- * @author spikeCong
- * @date 2023/5/3
  **/
 public class ChainedMap extends LinkedCaseInsensitiveMap<Object> {
     private ChainedMap() {

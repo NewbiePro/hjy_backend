@@ -1,10 +1,6 @@
 package com.msb.hjy_backend.common.constant;
 
-/**
- * 返回状态码
- * @author spikeCong
- * @date 2023/2/28
- **/
+
 public class HttpStatus {
 
     /**

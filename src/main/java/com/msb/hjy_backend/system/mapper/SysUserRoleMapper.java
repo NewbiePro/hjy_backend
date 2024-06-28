@@ -8,8 +8,6 @@ import java.util.List;
 
 /**
  * 用户与角色关联表 数据层
- * @author spikeCong
- * @date 2023/5/25
  **/
 public interface SysUserRoleMapper extends BaseMapper<SysUserRole>
 {

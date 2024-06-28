@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 /**
- * @author spikeCong
- * @date 2023/5/22
+ * 
+ * 
  **/
 @RestController
 @RequestMapping("/system/dict/type")

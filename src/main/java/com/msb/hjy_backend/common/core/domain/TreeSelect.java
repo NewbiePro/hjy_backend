@@ -8,11 +8,7 @@ import java.io.Serializable;
 import java.util.List;
 import java.util.stream.Collectors;
 
-/**
- * 构建树形结构实体类
- * @author spikeCong
- * @date 2023/5/24
- **/
+
 public class TreeSelect implements Serializable {
 
     //节点id

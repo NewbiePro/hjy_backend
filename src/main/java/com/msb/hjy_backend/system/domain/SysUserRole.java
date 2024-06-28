@@ -2,8 +2,6 @@ package com.msb.hjy_backend.system.domain;
 
 /**
  * 用户和角色关联 sys_user_role
- * @author spikeCong
- * @date 2023/5/25
  **/
 public class SysUserRole {
 

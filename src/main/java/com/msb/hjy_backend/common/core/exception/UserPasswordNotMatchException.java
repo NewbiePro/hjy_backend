@@ -2,8 +2,7 @@ package com.msb.hjy_backend.common.core.exception;
 
 /**
  * 用户密码不正确异常类
- * @author spikeCong
- * @date 2023/5/8
+ *
  **/
 public class UserPasswordNotMatchException extends CustomException {
 

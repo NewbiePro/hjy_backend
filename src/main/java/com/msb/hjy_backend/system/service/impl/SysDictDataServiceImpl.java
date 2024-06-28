@@ -9,8 +9,8 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 /**
- * @author spikeCong
- * @date 2023/5/22
+ * 
+ * 
  **/
 @Service
 public class SysDictDataServiceImpl implements SysDictDataService {

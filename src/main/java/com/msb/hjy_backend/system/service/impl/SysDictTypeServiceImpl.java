@@ -19,8 +19,8 @@ import java.util.List;
 import java.util.Objects;
 
 /**
- * @author spikeCong
- * @date 2023/5/19
+ * 
+ * 
  **/
 @Service
 public class SysDictTypeServiceImpl implements SysDictTypeService {

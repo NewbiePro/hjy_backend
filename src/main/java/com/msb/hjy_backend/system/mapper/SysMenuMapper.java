@@ -8,8 +8,6 @@ import java.util.List;
 
 /**
  * 菜单表 数据层
- * @author spikeCong
- * @date 2023/5/10
  **/
 public interface SysMenuMapper extends BaseMapper<SysMenu> {
 

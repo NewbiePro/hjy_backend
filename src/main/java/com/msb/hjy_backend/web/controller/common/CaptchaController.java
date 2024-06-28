@@ -14,8 +14,6 @@ import java.time.Duration;
 
 /**
  * 获取验证码
- * @author spikeCong
- * @date 2023/5/5
  **/
 @RestController
 public class CaptchaController {

@@ -15,8 +15,6 @@ import java.util.List;
 
 /**
  * 用户表 sys_user
- * @author spikeCong
- * @date 2023/5/3
  **/
 public class SysUser extends BaseEntity
 {

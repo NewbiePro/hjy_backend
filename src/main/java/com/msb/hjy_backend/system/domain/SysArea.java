@@ -8,8 +8,6 @@ import java.io.Serializable;
 /**
  * 区域表(SysArea)实体类
  *
- * @author makejava
- * @since 2024-06-05 12:49:52
  */
 @Data
 public class SysArea implements Serializable {

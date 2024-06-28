@@ -15,8 +15,6 @@ import java.io.IOException;
 
 /**
  * 自定义认证失败处理器
- * @author spikeCong
- * @date 2023/5/5
  **/
 @Component
 public class AuthenticationEntryPointImpl implements AuthenticationEntryPoint {

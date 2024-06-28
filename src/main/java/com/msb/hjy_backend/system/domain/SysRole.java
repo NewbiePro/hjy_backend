@@ -10,8 +10,6 @@ import java.util.Arrays;
 
 /**
  * 角色表 sys_role
- * @author spikeCong
- * @date 2023/5/9
  **/
 public class SysRole extends BaseEntity {
 

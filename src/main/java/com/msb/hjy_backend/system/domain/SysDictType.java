@@ -11,8 +11,6 @@ import javax.validation.constraints.Size;
 
 /**
  * 字典类型表
- * @author spikeCong
- * @date 2023/5/19
  **/
 public class SysDictType extends BaseEntity {
 

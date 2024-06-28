@@ -10,8 +10,6 @@ import java.util.List;
 
 /**
  * 菜单权限表 sys_menu
- * @author spikeCong
- * @date 2023/5/9
  **/
 public class SysMenu extends BaseEntity {
 

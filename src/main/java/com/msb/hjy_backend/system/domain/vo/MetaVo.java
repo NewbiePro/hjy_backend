@@ -2,8 +2,8 @@ package com.msb.hjy_backend.system.domain.vo;
 
 /**
  * 路由显示信息
- * @author spikeCong
- * @date 2023/5/11
+ * 
+ * 
  **/
 public class MetaVo {
 

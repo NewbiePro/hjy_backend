@@ -11,8 +11,6 @@ import javax.validation.constraints.Size;
 
 /**
  * 岗位表 sys_post
- * @author spikeCong
- * @date 2023/5/24
  **/
 public class SysPost extends BaseEntity
 {
