@@ -1,18 +1,14 @@
 package com.msb.hjy_backend.web.controller.community;
 
 
-import com.github.pagehelper.PageHelper;
-import com.github.pagehelper.PageInfo;
-import com.msb.hjy_backend.common.constant.HttpStatus;
+
 import com.msb.hjy_backend.common.core.controller.BaseController;
 import com.msb.hjy_backend.common.core.domain.BaseResponse;
 import com.msb.hjy_backend.common.core.page.PageResult;
-import com.msb.hjy_backend.common.utils.ServletUtils;
 import com.msb.hjy_backend.community.domain.HjyCommunity;
 import com.msb.hjy_backend.community.domain.dto.HjyCommunityDto;
 import com.msb.hjy_backend.community.domain.vo.HjyCommunityVo;
 import com.msb.hjy_backend.community.service.HjyCommunityService;
-import com.msb.hjy_backend.community.service.impl.HjyCommunityServiceImpl;
 import javax.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.access.prepost.PreAuthorize;

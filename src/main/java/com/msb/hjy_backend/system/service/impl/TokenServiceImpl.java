@@ -46,8 +46,8 @@ public class TokenServiceImpl implements TokenService {
     //分钟
     private static final long MILLIS_MINUTE = MILLIS_SECOND * 60;
 
-    //20分钟
-    private static final long MILLIS_MINUTE_TEN = MILLIS_SECOND * 60 * 20;
+    //40分钟
+    private static final long MILLIS_MINUTE_TEN = MILLIS_SECOND * 60 * 40;
 
     /**
      * 创建令牌

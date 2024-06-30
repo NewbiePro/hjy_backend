@@ -2,6 +2,7 @@ package com.msb.hjy_backend.framework.security.filter;
 
 import com.msb.hjy_backend.system.domain.LoginUser;
 import com.msb.hjy_backend.system.service.TokenService;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -20,6 +21,7 @@ import java.util.Objects;
 /**
  * Token过滤器 验证token的有效性
  **/
+@Slf4j
 @Component
 public class JwtAuthenticationTokenFilter extends OncePerRequestFilter {
 
@@ -39,6 +41,7 @@ public class JwtAuthenticationTokenFilter extends OncePerRequestFilter {
         if(!Objects.isNull(loginUser) && Objects.isNull(authentication)){
             tokenService.verifyToken(loginUser);
 
+            log.info("authorities are => {}", loginUser.getAuthorities());
             UsernamePasswordAuthenticationToken authenticationToken =
                     new UsernamePasswordAuthenticationToken(loginUser, null, loginUser.getAuthorities());
             //设置当前身份验证相关的详细信息

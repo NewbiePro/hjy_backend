@@ -2,8 +2,6 @@ package com.msb.hjy_backend.common.core.domain;
 
 import com.msb.hjy_backend.system.domain.SysDept;
 import com.msb.hjy_backend.system.domain.SysMenu;
-import sun.reflect.generics.tree.Tree;
-
 import java.io.Serializable;
 import java.util.List;
 import java.util.stream.Collectors;

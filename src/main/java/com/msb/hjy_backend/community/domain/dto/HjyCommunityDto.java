@@ -12,8 +12,6 @@ import lombok.Data;
 public class HjyCommunityDto extends BaseEntity {
 
 
-    private static final long serialVersionUID = -1708144701179687090L;
-
     @JsonFormat(shape = JsonFormat.Shape.STRING)
     private Long communityId;
 

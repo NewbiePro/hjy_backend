@@ -2,10 +2,13 @@ package com.msb.hjy_backend.system.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 import java.util.Collection;
+import java.util.List;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 /**
  * 登录用户 身份权限对象
@@ -36,6 +39,8 @@ public class LoginUser implements UserDetails {
      * 权限列表
      */
     private Set<String> permissions;
+
+    private List<SimpleGrantedAuthority> authorities;
 
     public LoginUser(SysUser user, Set<String> permissions) {
         this.user = user;
@@ -96,7 +101,14 @@ public class LoginUser implements UserDetails {
      */
     @Override
     public Collection<? extends GrantedAuthority> getAuthorities() {
-        return null;
+        if(authorities != null){
+            return authorities;
+        }
+
+        authorities = permissions.stream()
+                .map(SimpleGrantedAuthority::new)
+                .collect(Collectors.toList());
+        return authorities;
     }
 
     @JsonIgnore

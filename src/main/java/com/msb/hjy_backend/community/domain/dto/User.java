@@ -1,6 +1,7 @@
 package com.msb.hjy_backend.community.domain.dto;
 
-import cn.afterturn.easypoi.excel.annotation.*;
+import cn.afterturn.easypoi.excel.annotation.Excel;
+import cn.afterturn.easypoi.excel.annotation.ExcelTarget;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
@@ -10,14 +11,13 @@ import java.util.Date;
 import java.util.List;
 
 @ExcelTarget("users") // 标识当前类用于excel的导入和导出
-@Data
 @AllArgsConstructor
-public class User implements Serializable {
+@Data
+public class User  {
 
-    private static final long serialVersionUID = -3089672041013027348L;
 
     @Excel(name = "编号", orderNum = "1")
-    private String userId;
+    private Long userId;
     @Excel(name = "姓名", orderNum = "2")
     private String userName;
     @Excel(name = "年龄", orderNum = "4")
@@ -29,6 +29,10 @@ public class User implements Serializable {
 
     @Excel(name="爱好")
     private List<String> hobby;
+
+    public User() {
+
+    }
 
 
 //    @ExcelIgnore
