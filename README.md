@@ -2,7 +2,7 @@
 ## Introduction 
 Designed as a web-based application, the HeJiaYun Residential Property System actively serves to boost the productivity of community staff and maintain nice customer service quality. It achieves this via the implementation of diverse functionality modules including community administration, community asset management, and visitor management, among others.
 
-Hjy_backend represents the underlying system supporting HeJiaYun System. It seamlessly integrates a robust [tech stack](#tech-stack-introduction) comprised of Spring Boot, Spring MVC, Spring Security, MyBatis+, Redis, Docker and [Maven](#maven).
+Hjy_backend represents the underlying system supporting HeJiaYun System. It seamlessly integrates a robust tech stack comprised of Spring Boot, Spring MVC, Spring Security, MyBatis+, Redis, Docker and Maven.
 
 ## Backend Project Structure
 ### Overview
