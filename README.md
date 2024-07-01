@@ -62,24 +62,3 @@ com.msb.hjy_backend
 ```
 The web directory is primarily responsible for front-end interactions, mainly housing the controllers.
 
-## Module/ Feature Introduction
-###
-
-## Tech Stack Introduction
-### Spring Framework
-#### DI
-#### AOP
-
-### Spring Boot
-
-### Spring Security
-
-
-### Spring MVC
-
-### Spring Security
-
-
-### Maven
-
-### Design Pattern
