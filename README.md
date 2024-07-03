@@ -96,7 +96,7 @@ The web directory is primarily responsible for front-end interactions, mainly ho
 - Changing user passwords: Super admin privileges are required for password changes.
 - Toggling user status: Active status indicates the user is active, while disabled status indicates the user is inactive.
 
-## Role Module Development
+### Role Module Development
 Users need specific roles to access corresponding menus (permissions).
 - Adding roles.
 - Modifying roles.
@@ -104,7 +104,7 @@ Users need specific roles to access corresponding menus (permissions).
 - Querying roles.
 - Exporting role information.
 
-## Menu (Permissions) Module Development
+### Menu (Permissions) Module Development
 Roles must have corresponding menu permissions to perform certain operations.
 - Fetching menu information: Obtaining a tree structure of menu data in JSON format.
 - Adding menu information.
@@ -112,14 +112,14 @@ Roles must have corresponding menu permissions to perform certain operations.
 - Modifying menu information: Includes changing menu types, such as directory menus, button menus, and regular menus.
 - Changing menu status information: Includes whether the menu is displayed, cached, and whether the menu is active or disabled.
 
-## Department Module Development
+### Department Module Development
 - Fetching department information: Providing department data in a tree structure as JSON.
 - Querying department information.
 - Adding department information.
 - Deleting department information.
 - Modifying department information.
 
-## Login Module Development
+### Login Module Development
 - Fetching captcha: Using easy-captcha to generate a random captcha image and UUID.
 - User login: Includes username and password verification, and captcha validation. The system checks the user input against the data stored in Redis using the UUID. Each login refreshes the token time.
 - Fetching user information: Includes username, user roles, and user menus (permissions).
