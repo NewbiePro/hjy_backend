@@ -96,7 +96,7 @@ The web directory is primarily responsible for front-end interactions, mainly ho
 - Changing user passwords: Super admin privileges are required for password changes.
 - Toggling user status: Active status indicates the user is active, while disabled status indicates the user is inactive.
 
-### Role Module Development
+### Role Module
 Users need specific roles to access corresponding menus (permissions).
 - Adding roles.
 - Modifying roles.
@@ -104,7 +104,7 @@ Users need specific roles to access corresponding menus (permissions).
 - Querying roles.
 - Exporting role information.
 
-### Menu (Permissions) Module Development
+### Menu (Permissions) Module
 Roles must have corresponding menu permissions to perform certain operations.
 - Fetching menu information: Obtaining a tree structure of menu data in JSON format.
 - Adding menu information.
@@ -112,23 +112,22 @@ Roles must have corresponding menu permissions to perform certain operations.
 - Modifying menu information: Includes changing menu types, such as directory menus, button menus, and regular menus.
 - Changing menu status information: Includes whether the menu is displayed, cached, and whether the menu is active or disabled.
 
-### Department Module Development
+### Department Module
 - Fetching department information: Providing department data in a tree structure as JSON.
 - Querying department information.
 - Adding department information.
 - Deleting department information.
 - Modifying department information.
 
-### Login Module Development
+### Login Module
 - Fetching captcha: Using easy-captcha to generate a random captcha image and UUID.
 - User login: Includes username and password verification, and captcha validation. The system checks the user input against the data stored in Redis using the UUID. Each login refreshes the token time.
 - Fetching user information: Includes username, user roles, and user menus (permissions).
 
-## Routing Navigation Menu Development
+### Routing Navigation Menu
 Fetching left-side navigation menu and sub-menu data based on user ID and corresponding permissions.
 
-## Program Testing and Debugging
+## Testing
 - Unit testing: Using JUnit for unit testing, such as CRUD operations on data.
 - Functional testing: Using JUnit for functional testing, such as data export.
 - API testing: Using Postman for API interface testing to ensure the displayed JSON format matches the interface documentation.
-- Debugging and fixing: Fixing and testing modules with bugs found during testing.
