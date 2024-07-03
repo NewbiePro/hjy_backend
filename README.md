@@ -62,3 +62,19 @@ com.msb.hjy_backend
 ```
 The web directory is primarily responsible for front-end interactions, mainly housing the controllers.
 
+## Module Introduction
+### Community Module
+- Multi-condition pagination query for community information: Query using community name and community ID.
+- Adding community information.
+- Modifying community information:
+  - Displaying data based on community ID.
+  - Fetching three-level linkage information for the community's province, city, and district.
+  - Modifying community information based on changes.
+- Deleting community information: Bulk deletion based on one or multiple community IDs.
+- Changing property management department:
+  - Fetching linkage information for the property.
+  - Changing the property management department as needed, such as from the Beijing office to the Changsha office.
+- Fetching community dropdown list.
+- Exporting community data: Exporting current page data to Excel using easypoi.
+
+
